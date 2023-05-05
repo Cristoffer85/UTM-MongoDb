@@ -1,0 +1,39 @@
+<component name="libraryTable">
+  <library name="mongodb.jdbc" type="repository">
+    <properties maven-id="org.mongodb:mongodb-jdbc:2.0.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/mongodb-jdbc-2.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mongodb-driver-sync-4.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bson-4.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mongodb-driver-core-4.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bson-record-codec-4.7.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aspectjrt-1.9.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-31.1-jre.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/failureaccess-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr305-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/checker-qual-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/error_prone_annotations-2.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/j2objc-annotations-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/snakeyaml-1.29.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/mongodb-jdbc-2.0.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mongodb-driver-sync-4.7.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bson-4.7.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mongodb-driver-core-4.7.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bson-record-codec-4.7.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aspectjrt-1.9.7-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-31.1-jre-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/failureaccess-1.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr305-3.0.2-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/checker-qual-3.12.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/error_prone_annotations-2.11.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/j2objc-annotations-1.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/snakeyaml-1.29-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
