@@ -1,5 +1,4 @@
 import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
 import org.bson.Document;
@@ -7,6 +6,7 @@ import org.bson.Document;
 import java.util.Scanner;
 
 public class DBCRUD {
+
 
     // ############################################# KUND #############################################
     public static void addCustomer() {                      //Lägger till en Kund.

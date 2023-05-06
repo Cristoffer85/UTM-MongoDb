@@ -11,7 +11,7 @@ public class KeyReader {        //Klass för att läsa lösenord ifrån textfil,
         String userHome = System.getProperty("user.home");
 
         try {
-            //Hämta textfilen, kolla så den inte ligger i onedrive
+                                                //Hämtar textfilen, skall EJ ligga i Onedrive = Ex: C:\Users\*Användare*\Documents\Pass
             FileInputStream input = new FileInputStream(userHome + "/Documents/Pass/" + file +".txt");
             props.load(input);
 
@@ -21,6 +21,8 @@ public class KeyReader {        //Klass för att läsa lösenord ifrån textfil,
 
     }
     public String getPasscode(){
-        return props.getProperty("Pass");           //läs lösenordet i filen
+        return props.getProperty("Pass");  //läs lösenordet i filen
+
+        // OBSOBS lösenord skall i filen anges --> Pass=lösenord <-- OBSOBS
     }
 }

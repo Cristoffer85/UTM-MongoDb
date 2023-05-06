@@ -10,9 +10,11 @@ public class Anslutning {
     static MongoCollection<Document> employeesCollection;
 
     KeyReader KeyReader = new KeyReader("Pass");
+    DBCRUD dbcrud = new DBCRUD();
+
     public Anslutning() {  // Ansluter till Server + ansluter lokalt ifall den anslutningen inte skulle fungera.
         try {
-            mongoClient = MongoClients.create("mongodb+srv://cristofferostberg85:"+KeyReader.getPasscode()+"@cluster0.imetavy.mongodb.net/?retryWrites=true&w=majority");
+            mongoClient = MongoClients.create("mongodb+srv://cristofferostberg85:" + KeyReader.getPasscode() + "@cluster0.imetavy.mongodb.net/?retryWrites=true&w=majority");
             database = mongoClient.getDatabase("Personer");
             customersCollection = database.getCollection("Kunder");
             employeesCollection = database.getCollection("Anställda");
