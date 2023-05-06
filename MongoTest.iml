@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="mongodb.jdbc" level="project" />
+    <orderEntry type="library" name="mongodb.mongo.java.driver" level="project" />
   </component>
 </module>
