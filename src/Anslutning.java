@@ -5,11 +5,12 @@ import org.bson.Document;
 
 public class Anslutning {
     static MongoClient mongoClient;
-    MongoDatabase database;
+    static MongoDatabase database;
     static MongoCollection<Document> customersCollection;
     static MongoCollection<Document> employeesCollection;
 
     KeyReader KeyReader = new KeyReader("Pass");
+
     DBCRUD dbcrud = new DBCRUD();
 
     public Anslutning() {  // Ansluter till Server + ansluter lokalt ifall den anslutningen inte skulle fungera.

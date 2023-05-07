@@ -1,4 +1,6 @@
 import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.UpdateResult;
 import org.bson.Document;
@@ -6,7 +8,6 @@ import org.bson.Document;
 import java.util.Scanner;
 
 public class DBCRUD {
-
 
     // ############################################# KUND #############################################
     public static void addCustomer() {                      //Lägger till en Kund.
@@ -90,9 +91,15 @@ public class DBCRUD {
     }
 
     public static void printAllCustomers() {
-        if (Anslutning.customersCollection == null || Anslutning.customersCollection.getNamespace().getCollectionName().equals("Kunder")){
-            System.out.println(Anslutning.customersCollection);
+        if (Anslutning.customersCollection == null || Anslutning.customersCollection.getNamespace().getCollectionName().equals("Kunder")) {
+            Anslutning.database.getCollection("Kunder");
         }
+        FindIterable<Document> result = Anslutning.customersCollection.find();
+        System.out.println("\n------------------------------------------------------------------------------");
+        for (Document res : result) {
+            System.out.println(res.toJson());
+        }
+        System.out.println("------------------------------------------------------------------------------");
     }
 
     // ############################################# ANSTÄLLD #############################################
@@ -177,8 +184,14 @@ public class DBCRUD {
     }
 
     public static void printAllEmployees() {
-        if (Anslutning.employeesCollection == null || Anslutning.employeesCollection.getNamespace().getCollectionName().equals("Anställda")){
-            System.out.println(Anslutning.employeesCollection);
+        if (Anslutning.employeesCollection == null || Anslutning.employeesCollection.getNamespace().getCollectionName().equals("Anställda")) {
+            Anslutning.database.getCollection("Anställda");
         }
+        FindIterable<Document> result = Anslutning.employeesCollection.find();
+        System.out.println("\n------------------------------------------------------------------------------");
+        for (Document res : result) {
+            System.out.println("\n" + res.toJson());
+        }
+        System.out.println("------------------------------------------------------------------------------");
     }
 }
