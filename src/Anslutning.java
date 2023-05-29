@@ -31,7 +31,6 @@ public class Anslutning {
                 System.out.println("Ansluten till lokal MongoDB server.");
             } catch (MongoException ex) {
                 System.out.println("Tyvärr lyckades inte ansluta till lokal server heller: " + ex.getMessage());
-                System.exit(1);
             }
         }
     }

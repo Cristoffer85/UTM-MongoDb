@@ -23,6 +23,6 @@ public class KeyReader {        //Klass för att läsa lösenord ifrån textfil,
     public String getPasscode(){
         return props.getProperty("Pass");  //läs lösenordet i filen
 
-        // OBSOBS lösenord skall i filen anges --> Pass=lösenord <-- OBSOBS
+        // OBSOBS lösenord skall i filen anges --> Pass=<lösenord> <-- OBSOBS
     }
 }
